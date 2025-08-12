@@ -23,7 +23,7 @@ This project is built as a **Turborepo monorepo** with the following structure:
 ### User App Features
 - **Authentication**: Phone number and password-based login using NextAuth.js
 - **Dashboard**: User overview with balance and transaction history
-- **Add Money**: On-ramp transactions with bank integrations (HDFC, Axis Bank)
+- **Add Money**: On-ramp transactions with bank integrations
 - **P2P Transfers**: Send money to other users instantly
 - **Transaction History**: View all incoming and outgoing transactions
 - **Balance Management**: Real-time balance updates with locked/unlocked amounts
@@ -34,7 +34,7 @@ This project is built as a **Turborepo monorepo** with the following structure:
 - **User Management**: Integration with user database
 
 ### Bank Webhook
-- **HDFC Integration**: Webhook endpoint for bank transaction confirmations
+- **Bank Integration**: Webhook endpoint for bank transaction confirmations
 - **Transaction Processing**: Secure transaction status updates
 - **Balance Updates**: Automatic balance increments on successful payments
 
@@ -265,7 +265,7 @@ npx prisma generate       # Generate Prisma client
 - `POST /api/auth/signout` - User logout
 
 ### Bank Webhook APIs
-- `POST /hdfcWebhook` - HDFC bank webhook for transaction confirmations
+- `POST /bankWebhook` - Bank webhook for transaction confirmations
 
 ## 🧪 Testing
 
@@ -284,8 +284,8 @@ The application comes with pre-seeded test users for development:
 
 ## 🏦 Bank Integration
 
-### HDFC Bank Integration
-- **Webhook Endpoint**: `/hdfcWebhook`
+### Bank Integration
+- **Webhook Endpoint**: `/bankWebhook`
 - **Supported Operations**: Deposit confirmations
 - **Security**: Token-based transaction verification
 
