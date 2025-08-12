@@ -357,10 +357,6 @@ rm -rf node_modules && npm install
 lsof -i :3001  # Check what's running on port 3001
 ```
 
-## 📄 License
-
-This project is for educational purposes. See the [LICENSE](LICENSE) file for details.
-
 ## 🤝 Support
 
 For support and questions:
